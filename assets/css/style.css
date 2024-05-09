@@ -6,6 +6,7 @@
 body{
     background: url("/assets/images/background.png") fixed center no-repeat;
     background-size: cover;
+     overflow: hidden;
 }
 .navigation-bar{
     display: flex;
