@@ -6,7 +6,7 @@
 body{
     background: url("/assets/images/background.png") fixed center no-repeat;
     background-size: cover;
-     overflow: hidden;
+    overflow: hidden;
 }
 .navigation-bar{
     display: flex;
@@ -36,6 +36,10 @@ body{
 }
 .navigation-link ul li{
     list-style: none;
+}
+
+.navigation-link ul li .active{
+        color:#800000;
 }
 .navigation-link ul li a {
     color: #111111;
@@ -70,7 +74,4 @@ body{
 }
 .home .button img{
     margin: auto auto auto 10px;
-}
-.active {
-  color:800000;
 }
