@@ -71,3 +71,6 @@ body{
 .home .button img{
     margin: auto auto auto 10px;
 }
+.active {
+  color:800000;
+}
