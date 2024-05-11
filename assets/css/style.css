@@ -82,6 +82,8 @@ body {
 .home .button span {
 	position: relative;
 	top: -3px;
+	text-decoration:none;
+	color: #E8E8E8;
 	justify-content: center;
 	align-items: center;
 }
