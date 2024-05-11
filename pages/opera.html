@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <!-- page title -->
+    <title>Opera</title>
+    <!-- set character and configure view for mobile devices -->
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- style for page -->
+    <link rel='stylesheet' href='/assets/css/opera.css'>
+    <style>
+        .parte {
+            display: none;
+        }
+
+        .parte.afisat {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- container element -->
+    <!-- navigation bar -->
+    <nav class='navigation-bar'>
+        <!-- logo for navigation -->
+        <img src="/assets/images/logo.png" alt="" class="logo">
+        <!-- list for navigation -->
+        <div class='navigation-link'>
+            <ul>
+                <li class='list'>
+                    <a href='/index.html'>Home</a>
+                </li>
+                <li class='list'>
+                    <a href='#' class='active'>Opera</a>
+                </li>
+                <li class='list'>
+                    <a href='/pages/composers.html'>Composers</a>
+                </li>
+                <li class='list'>
+                    <a href='/pages/singers.html'>Singers</a>
+                </li>
+                <li class='list'>
+                    <a href='/pages/housers.html'> Opera Houses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about-opera">
+		<div class="text">
+        <h1 class="title">About Opera</h1>
+        <div class="parte afisat" id="partea-1">
+            <p>Opera is a captivating and multifaceted art form that combines music, drama, and spectacle to create an immersive theatrical experience. Originating in Italy in the late 16th century, opera has evolved over the centuries into a rich and diverse genre with a global following. At its core, opera is a form of musical theater in which stories are conveyed through a combination of singing, instrumental music, acting, and staging. The word "opera" itself is derived from the Latin word "opus," meaning "work," reflecting the collaborative effort required to produce a successful opera production. One of the defining characteristics of opera is its use of sung dialogue, or recitative, to advance the plot and convey emotions. This is interspersed with arias, or solo songs, in which characters express their inner thoughts and feelings in a more lyrical and reflective manner. Additionally, opera often features ensemble numbers, choruses, and orchestral interludes, adding depth and texture to the musical landscape.</p>
+            <div onclick="afiseazaPartea('partea-2', this)" class="button-1" > 
+                <span class="text">More information</span>
+                <img src='/assets/images/dark-verctor.png'>
+            </div>
+        </div>
+
+        <div class="parte" id="partea-2">
+            <!-- A doua parte va fi afișată aici -->
+            <p>Beyond its musical and dramatic elements, opera is also a visual art form, with elaborate sets, costumes, and stage effects playing a crucial role in bringing stories to life. Opera houses around the world, from the iconic La Scala in Milan to the historic Metropolitan Opera in New York City, serve as temples of culture and centers of artistic innovation. Opera has the power to transport audiences to distant lands and bygone eras, to evoke a wide range of emotions, and to provoke thought and reflection. Whether you're a seasoned opera aficionado or a newcomer to the art form, opera offers a rich and rewarding cultural experience that continues to captivate and inspire audiences around the globe.</p>
+            <div onclick="afiseazaPartea('partea-1', this)"  class="button">
+                <span  class="text">Less information</span>
+                <img src='/assets/images/dark-verctor.png'>
+            </div>
+        </div>
+	</div>
+        <img src="/assets/images/about-opera.png" alt="" class="photo">
+    </div>
+	<div class="history">
+		<img src="/assets/images/Group 1.png" alt="">
+	</div>
+    <script>
+     function afiseazaPartea(idParte, buton) {
+			var toatePartile = document.querySelectorAll('.parte');
+			for (var i = 0; i < toatePartile.length; i++) {
+				toatePartile[i].classList.remove('afisat');
+			}
+			document.getElementById(idParte).classList.add('afisat');
+			if (idParte === 'partea-2') {
+				document.getElementById('partea-1').querySelector('div').style.display = 'none'; // Ascunde butonul din prima parte
+			} else {
+				document.getElementById('partea-1').querySelector('div').style.display = 'block'; // Afișează butonul din prima parte
+			}
+		}
+
+    </script>
+</body>
+</html>
