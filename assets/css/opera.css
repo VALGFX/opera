@@ -10,10 +10,12 @@ body {
 }
 
 .navigation-bar {
+	z-index: 1;
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 36px auto 0 auto;
+	left: 20vh;
 	width: 80%;
 	background: #E8E8E8;
 	border-radius: 10px;
@@ -58,8 +60,10 @@ body {
 }
 
 .about-opera{
+	z-index: 0;
 	position: relative;
 	left: 10vh;
+	top: 100px;
 	display: flex;
 	margin: 36px auto 0 auto;
 	width: 80%;
@@ -89,12 +93,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
-.button img {
-	
-
-}
-
 .button-1 {
 	padding: 16px 32px;
 	border: solid #111111;
@@ -124,6 +122,6 @@ body {
 .history{
 	position: relative;
 	left: 30vh;
-	margin: 120px auto 0 auto;
+	margin: 220px auto 0 auto;
 	width: 100%;
 }
