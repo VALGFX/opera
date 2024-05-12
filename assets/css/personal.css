@@ -1,0 +1,277 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Tinos", serif;
+}
+
+body {
+	background: linear-gradient(rgba(25, 29, 35, 0.75), rgba(25, 29, 35, 0.75)), url("/assets/images/Mountain.jpg") fixed center no-repeat;
+	background-size: cover;
+}
+
+.navigation-bar {
+	z-index: 1;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    top: 36px;
+	left: 20vh;
+	width: 80%;
+	background: #E8E8E8;
+	border-radius: 10px;
+	padding: 10px 16px;
+	box-shadow: 0 10px 40px rgba(17, 17, 17, 0.15);
+}
+
+.navigation-bar .logo {
+	width: 124px;
+	height: 16px;
+}
+
+.navigation-bar .logo, .navigation-bar .navigation-link {
+	display: flex
+}
+
+.navigation-link {
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+}
+
+.navigation-link ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 45px;
+}
+
+.navigation-link ul li {
+	list-style: none;
+}
+
+.navigation-link ul li .active {
+	color: #800000;
+}
+
+.navigation-link ul li a {
+	color: #111111;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.body {
+    color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    z-index: 0;
+    position: relative;
+    top: 100px;
+}
+.body h1{
+    font-weight: bold;
+    font-size:7vh;
+    text-align: center;
+}
+
+.body h1 .accent{
+    color:#F94550;
+    z-index: 0;
+    margin-left: 5px;
+}
+
+.button {
+    margin-top: 20px; /* Adaugă un spațiu între text și buton */
+	padding: 16px 32px;
+	border: solid #E8E8E8;
+	width: max-content;
+	border-radius: 10px;
+	justify-content: center;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover{
+    background: #F94550;
+    border: solid #F94550;
+}
+
+.contact {
+    display: flex;
+    margin:40px;
+}
+
+.circle {
+    width: 70px; /* Mărimea cercului */
+    height: 70px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 5px; 
+    border: #E8E8E8 solid 1px;
+}
+
+.circle img {
+    justify-content: center;
+    align-items: center;
+    width: 32px; 
+    height: 32px; 
+    display: flex; 
+    padding: 18px 17px 18px 19px;
+}
+
+
+.about{
+    background: #1E1E1E;
+    width: 100%;
+    height:max-content;
+    
+}
+
+.about .tiltle .title  {
+    position: relative;
+    top: 40px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 45px;
+     color: #F94550;
+}
+
+.about .tiltle .underline1{
+    width: 200px;
+    height: 4px;
+    background-color: rgba(246, 244, 235, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;/* Margin auto pentru a alinia la centru */  
+    position: relative;
+    top: 15px;
+}
+
+.about .tiltle .underline2{
+    width: 60px;
+    height: 4px;
+    background-color: #F94550;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    position: relative;
+    top: 11px;
+}
+
+.about-me-section{
+    color: #E8E8E8;
+
+}
+
+.about-me-section h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-me-section h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.slidebar-section {
+	margin:40px 0px 40px 40px;
+	font-family: "Montserrat", sans-serif;
+    color: #E8E8E8;
+}
+
+.slidebar-section img{
+     width: 450px;
+     border-radius: 10px;
+}
+.app-wrapper{
+    position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+    font-family: "Lato", sans-serif;
+	width: 1200px;
+	margin: 40px auto;
+}
+.right-side-container {
+	margin:40px 40px 40px 0px;
+	padding-left:88px;
+}
+
+.experience{
+    color: #E8E8E8;
+    font-family: "Lato", sans-serif;
+}
+
+.education{
+    color: #E8E8E8;
+    font-family: "Lato", sans-serif;
+}
+.education  h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.education .first h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #F94550;
+}
+
+.education .first h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.education .first p{
+    font-size: 14px;
+    color: rgba(246, 244, 235, 0.8);
+}
+
+.education .second h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #F94550;
+}
+
+.education .second h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.education .second p{
+    font-size: 14px;
+    color: rgba(246, 244, 235, 0.8);
+}
+
+.experience h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.experience .first p{
+    color: rgba(246, 244, 235, 0.8);
+}
+.experience .first h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.evident{
+    color: #5AB2FF;
+}
+
+.experience .second p{
+    color: rgba(246, 244, 235, 0.8);
+}
+.experience .second h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slidebar-section .Repertoire h3{
+    font-size: 18px;
+    font-weight: bold;
+}
