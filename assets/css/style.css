@@ -79,6 +79,9 @@ body {
 	justify-content: center;
 }
 
+.home .button a{
+	text-decoration:none;
+
 .home .button span {
 	position: relative;
 	top: -3px;
